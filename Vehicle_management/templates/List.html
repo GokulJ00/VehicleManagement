@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'list.css' %}">
+</head>
+<body>
+<h1>VEHICLE MANAGEMENT SYSTEM</h1>
+
+<form>
+    <a class="button" href="{% url 'create' %}" > ADD</a>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Description</th>
+        </tr>
+
+        {% for i in vehicle %}
+        <tr>
+            <td>{{i.number}}</td>
+            <td>{{i.type}}</td>
+            <td>{{i.model}}</td>
+            <td>{{i.description}}</td>
+            <td><a href="{% url 'update' i.id %}">UPDATE</a></td>
+            <td><a href="{% url 'delete' i.id %}">DELETE</a></td>
+            <td><a href="{% url 'details' i.id %}">VIEW</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+    {%if request.user.is_authenticated %}
+    <a class="button" href="{% url 'logout' %}" type="submit">logout</a>
+    {% else %}
+    <a href="{% url 'login' %}">login</a>
+    {%endif%}
+</body>
+</html>

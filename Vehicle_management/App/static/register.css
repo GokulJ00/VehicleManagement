@@ -1,0 +1,95 @@
+body {
+ background-image: url("https://img.freepik.com/free-vector/realistic-bokeh-background_52683-64201.jpg?w=2000");
+ background-color: #cccccc;
+}
+
+form{
+  position:relative;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 50px auto 0;
+  border-radius: 4px;
+  border-color:Black;
+  background-color: #FFEFF1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    margin:0 0 50px 0;
+    padding:10px;
+    text-align:center;
+    font-size:50px;
+    color:darken(#e5e5e5, 50%);
+    border-bottom:solid 1px #e5e5e5;
+  }
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin:0;
+
+  }
+input[type="text"],input[type="password"] {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 1.6em;
+    padding: .8em .5em;
+    border-radius: 20px;
+}
+input[type="text"]:focus,input[type="password"]:focus {
+    background: #fff
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 20px;
+
+}
+input[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type="submit"]:{
+     hover
+
+}
+label{
+    left: 8px;
+    top: 12px;
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    padding:15px;
+    margin: 20px 0 3em 0;
+    position: relative;
+}
+
+a{
+    background-color: #00308F;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'create.css'%}">
+</head>
+<body>
+<form method="post" action="">
+    <h2 style="color:Black;">About the Vehicle..</h2>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="button" type="submit" value="submit">
+    <a class="button" href="{% url 'vehicle' %}">Back</a>
+</form>
+</body>
+</html>

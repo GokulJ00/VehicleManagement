@@ -1,0 +1,59 @@
+body {
+ background-image: url("https://img.freepik.com/free-vector/realistic-bokeh-background_52683-64201.jpg?w=2000");
+ background-color: #cccccc;
+}
+
+h1{
+text-align: center
+}
+
+form {
+  margin-left: 15%;
+  margin-right:15%;
+  width: 70%;
+  height: 300px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #FFEFF1;
+  font-size: 16px;
+  resize: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+  border: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #D3D3D3}
+tr:nth-child(odd){background-color: #D3D3D3}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+a [class="button"]{
+    background-color: #00308F;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
